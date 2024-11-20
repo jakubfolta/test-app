@@ -2,7 +2,6 @@ import { useState } from 'react';
 import FormInput from '../../components/formInput';
 import './index.css';
 import SubmitButton from '../../components/submitButton';
-import Image from '../../components/image';
 
 const defaultFormState = {
   firstName: {
