@@ -1,3 +1,87 @@
-.contact {
-  height: 30rem;
+.section__contact {
+  display: flex;
+  justify-content: center;
+  padding: var(--padding-mobile);
+
+  @media only screen and (min-width: 960px) { padding: var(--padding-desktop); }
+}
+
+.section__contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+
+  @media only screen and (min-width: 960px) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 9rem;
+    width: 100%;
+    max-width: 1110px;
+  }
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 445px;
+}
+
+.leftContainer__heading {
+  font-size: var(--large-font-size);
+  line-height: 43.2px;
+}
+
+.leftContainer__description {
+  word-spacing: 1px;
+  font-size: var(--default-font-size);
+  line-height: 19.6px;
+}
+
+.rightContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 540px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  @media only screen and (min-width: 960px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.form__fieldWrapper {
+  width: 100%;
+
+  @media only screen and (min-width: 960px) { max-width: 255px; }
+}
+
+.form__fieldWrapper-full { max-width: 100%; }
+.form__submitContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.form__submitContainer-message {
+  position: absolute;
+  top: -50%;
+  transform: translateY(50%);
 }

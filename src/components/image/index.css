@@ -1,0 +1,14 @@
+.imageComponent {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Can add here many more additional classes to make it widely reusable */
+.half {
+  width: 50%;
+}
+
+.contain {
+  object-fit: contain;
+}
+

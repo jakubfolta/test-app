@@ -1,12 +1,11 @@
 import './index.css'
 
-const FormInput = ({ type, name, value, onChange, placeholder, required, disabled, style }) => {
-
-  const formStyle = style === 'full' ? 'formInput formInput-full' : 'formInput formInput-half';
+const FormInput = ({ type, name, value, onChange, placeholder, required, disabled, isValid, isTouched }) => {
+  const inputStyle = isTouched && !isValid ? 'formInput formInput-invalid' : 'formInput';
 
   return (
     <input
-      className={formStyle}
+      className={inputStyle}
       type={type}
       id={name}
       name={name}

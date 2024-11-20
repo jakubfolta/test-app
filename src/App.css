@@ -5,6 +5,25 @@
   & * {
     box-sizing: border-box;
   }
+
+  /* Measures */
+  --padding-mobile: 6rem 3rem;
+  --padding-desktop: 9rem 6rem;
+  --padding-input: 2rem 3rem;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-accent: #EE3D1B;
+  --color-accent-2: #D52047;
+  --color-accent-3: #ED4C5C;
+  --color-success: #2fd83a;
+  --color-contact-invalid: #f77979;
+  --color-warning: #e80202;
+  
+  /* Fonts */
+  --default-font-size: 1.4rem;
+  --large-font-size: 3.6rem;
 }
 
 .App {

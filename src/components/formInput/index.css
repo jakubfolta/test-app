@@ -1,22 +1,16 @@
 .formInput {
-  max-width: 100%;
-  display: block;
   border-radius: .6rem;
+  width: 100%;
   height: 6rem;
   border: 1px solid #333;
-  padding: 2rem 3rem;
+  padding: var(--padding-input);
   font-size: 1.6rem;
-  margin: 2.4rem 0;
 
   &::placeholder {
     color: #132743;
   }
 }
 
-.formInput-full {
-  width: 54rem;
-}
-
-.formInput-half {
-  width: 25.5rem;
+.formInput-invalid {
+  border-color: var(--color-warning);
 }

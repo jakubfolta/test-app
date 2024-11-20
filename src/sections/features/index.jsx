@@ -38,7 +38,7 @@ const Features = () => {
           {
             features.map((feature, index) => {
               return (
-                <ImageCard key={index} image={feature.image} heading={feature.heading} text={feature.text} link={feature.link} />
+                <ImageCard key={index} image={[feature.image, feature.image]} heading={feature.heading} text={feature.text} link={feature.link} />
               )
             })
           }
